@@ -13,10 +13,46 @@ const renderPage = () => {
     <li><a href="#" onclick="loadPage('contact')">Contact</a></li>
     </ul>
     </nav>
-    </section>   
+    </section>
+   
+    <section class="slide-1">
+    <img src="./img/background0.jpg" alt="background">
+    <article class="text-card">
+    <h2>Welcome | Mastering23</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Minima libero quas, quisquam autem eveniet, reiciendis dicta
+    esse culpa necessitatibus, vitae placeat earum! Reiciendis quasi,
+    quos illum consequuntur nemo illo expedita?
+    </p>
+    </article>
+    </section>
+    
+    <section class="slide-2">
+    <img src="./img/background1.jpg" alt="background">
+    <article class="text-card">
+    <h2>CSS STYLE</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Minima libero quas, quisquam autem eveniet, reiciendis dicta
+    esse culpa necessitatibus, vitae placeat earum! Reiciendis quasi,
+    quos illum consequuntur nemo illo expedita?
+    </p>
+    </article>
+    </section>  
+
+    <section class="slide-3">
+    <img src="./img/background2.jpg" alt="background">
+    <article class="text-card">
+    <h2>JavaScript</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Minima libero quas, quisquam autem eveniet, reiciendis dicta
+    esse culpa necessitatibus, vitae placeat earum! Reiciendis quasi,
+    quos illum consequuntur nemo illo expedita?
+    </p>
+    </article>
+    </section>      
   </main>  
     `,
-    about:`
+    about: `
         <main>
   <h1>Web Developers</h1>
   <section> 
@@ -55,7 +91,7 @@ const renderPage = () => {
     </section>   
   </main>  
     `,
-    contact:`
+    contact: `
     
            <main>
   <h1>Web Developers</h1>
@@ -72,8 +108,8 @@ const renderPage = () => {
     <h2>Contact</h2>
     </section>   
   </main>  
-    `
-    };
+    `,
+  };
   window.loadPage = (page) => {
     container.innerHTML = pages[page];
     event.preventDefault();

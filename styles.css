@@ -1,48 +1,132 @@
-*{
+* {
   padding: 0;
   margin: 0;
 }
-body{
-  background-color:black;
-  color:white;
+body {
+  background-color: black;
+  color: white;
+  overflow: hidden;
 }
 
-h1{
-  padding:20px;
+h1 {
+  padding: 20px;
   place-self: center;
   font-size: 2rem;
 }
-h2{
+h2 {
   color: white;
-  padding-bottom:20px;
+  padding-bottom: 20px;
 }
 
-section{
+section {
   padding: 20px;
   place-self: center;
 }
 
-nav{
+nav {
   place-self: center;
 }
 
-li{
+li {
   padding-top: 10px;
   padding-right: 20px;
   list-style: none;
-  display:inline-block;
+  display: inline-block;
   gap: 20px;
 }
-a{
-  color:white;
+a {
+  color: white;
   text-decoration: none;
 }
-a:hover{
-  color:goldenrod;  
+a:hover {
+  color: goldenrod;
 }
 
-.context-p{
+.context-p {
   width: 400px;
   height: 200px;
   overflow-y: scroll;
+}
+.slide-1,
+.slide-2,
+.slide-3 {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+img {
+  width: 150%;
+  left: 50%;
+  transform: translate(-50%, 0, -50%);
+  animation: zoom-out 10s linear infinite;
+}
+@keyframes zoom-out {
+  100% {
+    width: 100%;
+  }
+}
+
+.text-card {
+  width: 600px;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+}
+.text-card h2 {
+  margin-bottom: 40px;
+}
+
+.slide-1 {
+  animation: background0 10s linear infinite;
+}
+.slide-2 {
+  animation: background1 10s linear infinite;
+}
+.slide-3 {
+  animation: background2 10s linear infinite;
+}
+
+@keyframes background0 {
+  0% {
+    visibility: visible;
+  }
+  35% {
+    visibility: hidden;
+  }
+  70% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes background1 {
+  0% {
+    visibility: hidden;
+  }
+  35% {
+    visibility: hidden;
+  }
+  60% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes background2 {
+  0% {
+    visibility: hidden;
+  }
+  35% {
+    visibility: hidden;
+  }
+  62% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
