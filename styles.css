@@ -61,6 +61,7 @@ img {
   transform: translate(-50%, 0, -50%);
   animation: zoom-out 10s linear infinite;
 }
+
 @keyframes zoom-out {
   100% {
     width: 100%;
@@ -129,4 +130,8 @@ img {
   100% {
     visibility: visible;
   }
+}
+
+audio{
+  display: none;
 }
