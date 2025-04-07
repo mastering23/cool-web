@@ -132,6 +132,9 @@ img {
   }
 }
 
+
 audio{
-/*   display: none; */
+  padding:100px;
+  float:right;
+  height: 20px;
 }

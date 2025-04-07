@@ -4,7 +4,7 @@ const renderPage = () => {
   const pages = {
     home: `
     <main>
-  <h1>Web Developers</h1>
+  <h1>Web Developers</h1>  
   <section>
    <nav>
     <ul> 
